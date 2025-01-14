@@ -20,12 +20,12 @@ display_help() {
     echo
     echo "Options:"
     echo "  -SmtpServer <server>      SMTP server address (default: fallbackprefix.mail.protection.outlook.com)"
-    echo "  -To <recipient>           Recipient email address (default: helpdesk@fallbackprefix.onmicrosoft.com)"
-    echo "  -From <sender>            Sender email address (default: spoofer@fallbackprefix.onmicrosoft.com)"
-    echo "  -Subject <subject>        Email subject (default: Spoofing test)"
+    echo "  -To <recipient>           Recipient email address (default: recipient@fallbackprefix.onmicrosoft.com)"
+    echo "  -From <sender>            Sender email address (default: sender@fallbackprefix.onmicrosoft.com)"
+    echo "  -Subject <subject>        Email subject (default: Mail test)"
     echo "  -Body <body>              Email body (HTML format)"
-    echo "  -FirstName <firstname>    Sender's first name (default: SpoofedFirstname)"
-    echo "  -LastName <lastname>      Sender's last name (default: SpoofedLastname)"
+    echo "  -FirstName <firstname>    Sender's first name (default: Firstname)"
+    echo "  -LastName <lastname>      Sender's last name (default: Lastname)"
     echo "  -Attachments <files>      Comma-separated list of attachment files"
     echo "  -Cc <cc>                  CC email addresses"
     echo "  -Bcc <bcc>                BCC email addresses"
@@ -43,7 +43,7 @@ firstname="SpoofedFirstname"
 lastname="SpoofedLastname"
 recipient="helpdesk@fallbackprefix.onmicrosoft.com"
 subject="Spoofing test"
-email_body='<!DOCTYPE html><html><body><p>Hallo Herr Hammer</p><p>Message goes Here</p><p>Here is a <a href="https://www.google.de">https://www.google.de</a></p><p>Grüße</p><p>Tester</p></body></html>'
+email_body='<!DOCTYPE html><html><body><p>Hallo Herr Mustermann</p><p>Message goes Here</p><p>Here is a <a href="https://www.google.de">https://www.google.de</a></p><p>Grüße</p><p>Tester</p></body></html>'
 
 # Check if pwsh is available
 if ! command -v pwsh &> /dev/null; then
