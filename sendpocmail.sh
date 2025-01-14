@@ -38,11 +38,11 @@ display_help() {
 
 # Default values
 smtp_server="fallbackprefix.mail.protection.outlook.com"
-mail_address="spoofer@fallbackprefix.onmicrosoft.com"
-firstname="SpoofedFirstname"
-lastname="SpoofedLastname"
-recipient="helpdesk@fallbackprefix.onmicrosoft.com"
-subject="Spoofing test"
+mail_address="sender@fallbackprefix.onmicrosoft.com"
+firstname="Firstname"
+lastname="Lastname"
+recipient="recipient@fallbackprefix.onmicrosoft.com"
+subject="Mail POC Test"
 email_body='<!DOCTYPE html><html><body><p>Hallo Herr Mustermann</p><p>Message goes Here</p><p>Here is a <a href="https://www.google.de">https://www.google.de</a></p><p>Grüße</p><p>Tester</p></body></html>'
 
 # Check if pwsh is available
